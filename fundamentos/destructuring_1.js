@@ -18,7 +18,7 @@ const {name: nome, abilities:habilidades} = villain;
 
 console.log(nome, habilidades);
 
-//Destructuringvalores que não existem e tratando um valor que nao existe para uma retorno padrao
+//Destructuring valores que não existem e tratando um valor que nao existe para uma retorno padrao
 const {produtora, primeiraAparicao = true} = villain;
 console.log(produtora, primeiraAparicao);
 
