@@ -121,3 +121,15 @@ resultadoFuncaoExterna(3);
 
  funcaoSemRetorno()
 
+ //Recursividade com funcao
+
+ let funcaoRecursiva = function loop()
+ {
+     loop()
+     {
+         console.log("Executando loop");
+     }
+ }
+
+//funcaoRecursiva();
+
