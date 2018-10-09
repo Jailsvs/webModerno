@@ -4,7 +4,7 @@ function Pessoa(){
     //Cambiarra do JS
     const self = this;
     //Dispara uma determinada acao em um tempo determinado em milisegundo
-    setInterval(function()
+    setInterval(function()  
     {
         self.idade++;
         console.log(self.idade);
