@@ -41,7 +41,8 @@ console.log(produto_1.getPrecoProduto(), produto_2.getPrecoProduto());
 produto_1.nome = 'Lápis';//Acessando e modificando o valor
 console.log(produto_1);//Agora o nome do produto_1 é Lápis
 
-produto_2.preco = 5000;//Continua alterando o valor do produto????
+console.log("--------------");
+console.log(produto_1.preco);//undefined pois preco nao esta disponivel fora do objeto
 
 console.log(produto_2);
 
