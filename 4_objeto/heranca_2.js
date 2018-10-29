@@ -36,7 +36,7 @@ const carro =
             this.velocidadeAtual = this.velocidadeMaxima;
         }
     },
-    status: function(){
+    status() {
         return `${ this.velocidadeAtual}KM/H de ${ this.velocidadeMaxima }KM/H`;
     }
 }
@@ -51,7 +51,7 @@ const volvo =
 {
     modelo:'V40',
     //Shadowing de status de carro também 
-    status:function(){
+    status(){
         //Assim como this referencia o objeto atual o super referencia o prototipo pai
         return `Modelo ${ this.modelo }: ${ super.status() }`;
 
