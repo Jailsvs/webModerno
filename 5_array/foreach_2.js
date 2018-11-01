@@ -13,3 +13,5 @@ NbaPlayers.forEach_2(function(nome, indice)
 {
     console.log(`${ indice + 1 } )` + ` ${ nome }`);
 });
+
+
