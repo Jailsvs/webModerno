@@ -1,15 +1,15 @@
 /**
  * Importações de módulos node
  */
-const schedule = require('node-schedule');
+// const schedule = require('node-schedule');
 
 /** 
  * Criando a primeira tarefa temporizada
  * scheduleJob ('') -> refere a representacao de segundos, min, hora, mes, dia e etc..
  */
-const job_1 = schedule.scheduleJob('*/5 * 16 * * 6', function() {
-    console.log('Executando a primeira tarefa programada', new Date().getSeconds());
-});
+// const job_1 = schedule.scheduleJob('*/5 * 16 * * 6', function() {
+//     console.log('Executando a primeira tarefa programada', new Date().getSeconds());
+// });
 
 /**
  * Executando setTimeout depois de realizar o camando de um função
