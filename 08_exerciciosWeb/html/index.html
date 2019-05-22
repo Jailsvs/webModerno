@@ -10,9 +10,8 @@
         <h1>Exercícios HTML</h1>
         <nav>
             <ul>
-                <li>
-                    <a href="exercicios/teste.html">00 - Teste</a>
-                </li>
+                <li><a href="exercicios/teste.html">00 - Teste</a></li>
+                <li><a href="exercicios/temp.html">01 - Temp</a></li>
             </ul>
         </nav>
     </header>
@@ -24,5 +23,24 @@
     <footer>
         <p>Curso Web Moderno - Cod3r</p>
     </footer>
+    <script>
+        /**
+        * querySelectorAll seleciona todas a tags passadas como parâmetro
+        * params - a = links html
+        */
+        document.querySelectorAll('a').forEach(link => {
+        //Pegando um elemento pelo id
+        const conteudo = document.getElementById('conteudo');
+    
+    link.onclick = function(evento) {
+        evento.preventDefault();//Impede que a ação padrão seja executada neste caso a navegação
+
+        //Fazendo uma chamada Ajax com fetch que baseado em promise
+        fetch(link.href)
+            .then(response => response.text())//pega todo conteúdo html 
+            .then(html => conteudo.innerHTML = html)
+        }   
+    });
+    </script>
 </body>
 </html>
